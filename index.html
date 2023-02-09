@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drag n Drog</title>
+  <title>Drag n Drop</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,16 @@
 </head>
 
 <body>
+  <div class="container">
+    <h1>Drag n Drop</h1>
+    <p>Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location. </p>
+    <div class="main">
+      <div class="main-div" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="house.png" draggable="true" ondragstart="drag(event)" id="drag1" class="main-div-image">
+      </div>
+      <div class="main-div" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
   <!-- JavaScript -->
   <script src="main.js"></script>
 </body>
